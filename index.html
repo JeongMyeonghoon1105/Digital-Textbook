@@ -73,7 +73,7 @@
       </div>
     </div>
     <div class="button-container">
-      <img src="img/ico_answer.png" alt="" id="answer" onclick="openModal1()" style="width: 50px; height: 50px;">
+      <img src="img/ico_answer.png" alt="" id="first-answer" onclick="openModal1()" style="width: 50px; height: 50px;">
     </div>
     <!-- 일반 텍스트 -->
     <div class="main-text">
@@ -105,7 +105,7 @@
         <img src="img/013_5.jpg" alt="" style="width: 100px;"><br>
         1. 자연의 구성 요소들을 분류할 수 있는 기준에는 어떤 것이 있는지 생각해 보자.<br>
         <text style="line-height: 50px;">2. 기준에 따라 자연의 구성 요소를 분류하여 빈 종이에 붙여 보자.</text>
-        <img src="img/ico_answer.png" alt="" id="learning-activity-answer-button"><br>
+        <img src="img/ico_answer.png" alt="" id="learning-activity-answer-button" onclick="openModal2()"><br>
         <table>
           <tr>
               <td class="learning-activity-table-title" style="border-bottom: 1px solid white;">
@@ -114,20 +114,20 @@
               <td style="color: rgb(127, 93, 69);">
                 <img src="img/013_8.png" alt="" class="example-icon-img">&nbsp;생물
               </td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td><textarea class="table-answer" id="answer4"></textarea></td>
+              <td><textarea class="table-answer" id="answer5"></textarea></td>
+              <td><textarea class="table-answer" id="answer6"></textarea></td>
+              <td><textarea class="table-answer" id="answer7"></textarea></td>
           </tr>
           <tr>
               <td class="learning-activity-table-title">자연의<br>구성 요소</td>
               <td style="color: rgb(127, 93, 69);">
                 <img src="img/013_8.png" alt="" class="example-icon-img">&nbsp;개미,<br>나무
               </td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td><textarea class="table-answer" id="answer8"></textarea></td>
+              <td><textarea class="table-answer" id="answer9"></textarea></td>
+              <td><textarea class="table-answer" id="answer10"></textarea></td>
+              <td><textarea class="table-answer" id="answer11"></textarea></td>
           </tr>
         </table>
       </div>
@@ -140,10 +140,40 @@
     </footer>
     <!-- Modal 창 -->
     <div class="modal" id="modal1">
-
+      <p>예시 답안</p><br>
+      <text>언제?</text>&nbsp;&nbsp;작년 5월 학교에서 친구들과 함께 체험 활동을 갔을 때<br>
+      <text>어디서?</text>&nbsp;&nbsp;경주에서<br>
+      <text>무엇을 보았나?</text>&nbsp;&nbsp;불국사의 청운교와 백운교를 보았는데, 암석으로 만든 계단이 있었다.<br>
+      불국사 주위로는 울창한 숲이 있었고, 노을이 지고 있어 경치가 뛰어났다.<br>
     </div>
     <div class="modal" id="modal2">
-
+      스스로 생각하여 답을 적어 본<br>뒤에 정답을 확인하세요.
+    </div>
+    <div class="modal" id="modal3">
+      <p>예시 답안</p><br>
+      <table>
+        <tr>
+          <td class="modal-table-title" style="border-bottom: 1px solid white;">
+            분류할 수<br>있는 기준
+          </td>
+          <td>생물</td>
+          <td>돌</td>
+          <td>공기</td>
+          <td>물</td>
+          <td>우주(지구 바깥)</td>
+        </tr>
+        <tr>
+          <td class="modal-table-title">자연의<br>구성 요소</td>
+          <td>개미, 나무</td>
+          <td>자갈, 바위</td>
+          <td>바람</td>
+          <td>바닷물, 강물</td>
+          <td>별, 태양</td>
+        </tr>
+      </table>
+    </div>
+    <div class="modal" id="modal4">
+      스스로 생각하여 답을 적어 본<br>뒤에 정답을 확인하세요.
     </div>
   </div>
 </body>

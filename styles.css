@@ -251,8 +251,9 @@ body .content .learning-activity-box .learning-activity-entry table {
   border-collapse : collapse;
   margin-top: 7px;
 }
-body .content .learning-activity-box .learning-activity-entry table td{
-  width: 1000px;
+
+body .content .learning-activity-box .learning-activity-entry table td {
+  width: 200px;
   height: 80px;
   text-align: center;
   border: 1px solid rgb(215, 220, 230);
@@ -262,6 +263,14 @@ body .content .learning-activity-box .learning-activity-entry table td{
   vertical-align: top;
   vertical-align: bottom;
   vertical-align: middle;
+}
+
+body .content .learning-activity-box .learning-activity-entry table td .table-answer {
+  width: 150px;
+  height: 60px;
+  margin-top: 10px;
+  border: none;
+  resize: none;
 }
 
 .example-icon-img {
@@ -289,24 +298,92 @@ body .content footer .page-number text {
   display: none;
 }
 
-#modal1 {
+#modal1, #modal3 {
   position: absolute;
-  top: 500px;
-  left: 50px;
-  width: 1200px;
-  height: 300px;
+  width: 1155px;
+  height: 250px;
   background-color: white;
-  border: 1px solid rgb(72, 209, 255);
+  padding: 20px;
+  font-size: 30px;
+  line-height: 40px;
+  box-shadow: 2px 2px 20px 10px lightgray;
+  border: 4px rgb(46, 70, 133) solid;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+#modal1 {
+  top: 650px;
+  left: 40px;
+}
+
+#modal3 {
+  bottom: 360px;
+  left: 40px;
+}
+
+#modal1 p, #modal3 p {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(46, 70, 133);
+}
+
+#modal1 text, #modal3 text {
+  font-weight: bold;
+}
+
+#modal2, #modal4 {
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  background-color: rgb(136, 136, 136);
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  border: none;
+  border-radius: 10px;
   z-index: 1000;
 }
 
 #modal2 {
-  position: absolute;
-  top: 500px;
-  left: 50px;
-  width: 1200px;
-  height: 300px;
-  background-color: white;
-  border: 1px solid rgb(242, 174, 157);
-  z-index: 1000;
+  top: 565px;
+  right: 330px;
+}
+
+#modal4 {
+  bottom: 300px;
+  right: 100px;
+}
+
+body .content #modal3 table {
+  border-collapse : collapse;
+  margin-top: 7px;
+}
+
+body .content #modal3 table td {
+  width: 200px;
+  height: 80px;
+  text-align: center;
+  border: 1px solid rgb(136, 136, 136);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  vertical-align: top;
+  vertical-align: bottom;
+  vertical-align: middle;
+}
+
+body .content #modal3 table td .table-answer {
+  width: 150px;
+  height: 60px;
+  margin-top: 10px;
+  border: none;
+  resize: none;
+}
+
+body .content #modal3 .modal-table-title {
+  background-color: rgb(136, 136, 136);
+  color: white;
 }
