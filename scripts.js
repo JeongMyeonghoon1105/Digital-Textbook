@@ -29,13 +29,20 @@ function openModal2() {
   }
 }
 
+function openModal3() {
+  var modal5 = document.getElementById("modal5");
+  modal5.style.display = 'block';
+}
+// Close Modal Function
 document.onclick = (event) => {
   var modal1 = document.getElementById("modal1");
   var modal2 = document.getElementById("modal2");
   var modal3 = document.getElementById("modal3");
   var modal4 = document.getElementById("modal4");
+  var modal5 = document.getElementById("modal5");
   var answer1 = document.getElementById("first-answer");
   var answer2 = document.getElementById("learning-activity-answer-button");
+  var answer3 = document.getElementsByClassName("word-explanation")
   if (event.target != modal1 && event.target != answer1) {
     modal1.style.display = "none";
   }
@@ -47,5 +54,8 @@ document.onclick = (event) => {
   }
   if (event.target != modal4 && event.target != answer2) {
     modal4.style.display = "none";
+  }
+  if (event.target != modal5 && event.target != answer3[0]) {
+    modal5.style.display = "none";
   }
 }

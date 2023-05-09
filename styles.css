@@ -162,6 +162,12 @@ body .content .main-text {
   line-height: 50px;
 }
 
+body .content .main-text .word-explanation {
+  color: rgb(56, 204, 192);
+  font-weight: bold;
+  cursor: pointer;
+}
+
 body .content .learning-activity-title {
   background-color: white;
   position: absolute;
@@ -386,4 +392,15 @@ body .content #modal3 table td .table-answer {
 body .content #modal3 .modal-table-title {
   background-color: rgb(136, 136, 136);
   color: white;
+}
+
+#modal5 {
+  position: absolute;
+  width: 120px;
+  height: 20px;
+  background-color: white;
+  padding: 20px;
+  top: 780px;
+  right: 250px;
+  border: 1px solid rgb(56, 204, 192);
 }
