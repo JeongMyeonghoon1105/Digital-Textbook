@@ -145,7 +145,7 @@ body .content .entry .video-container .img-caption {
 
 body .content .button-container {
   position: relative;
-  height: 64px;
+  height: 50px;
 }
 
 body .content .button-container img {
@@ -173,18 +173,23 @@ body .content .learning-activity-title {
 
 body .content .learning-activity-tab {
   position: absolute;
-  bottom: 733px;
+  bottom: 745px;
   right: 240px;
-  background-color: rgb(154, 151, 142);
   width: 150px;
   height: 50px;
+  background-color: rgb(110, 103, 84);
   color: white;
+  font-weight: bold;
   text-align: center;
   line-height: 55px;
+  cursor: pointer;
   border: none;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   font-size: 20px;
+}
+body .content .learning-activity-tab:hover {
+  background-color: rgb(221, 211, 204);
 }
 
 body .content .learning-activity-title img {
@@ -204,9 +209,68 @@ body .content .learning-activity-title div {
 
 body .content .learning-activity-box {
   width: 1180;
-  height: 600px;
-  border: 10px solid rgb(177, 171, 157);
+  height: 630px;
+  border: 10px solid rgb(222, 211, 204);
   border-radius: 20px;
+}
+
+body .content .learning-activity-box .learning-activity-classification {
+  position: absolute;
+  bottom: 712px;
+  right: 58px;
+  width: 150px;
+  height: 25px;
+  background-color: rgb(15, 89, 145);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 25px;
+  border: none;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+body .content .learning-activity-box .learning-activity-entry {
+  width: 550px;
+  height: 200px;
+  padding: 50px 20px 0 20px;
+  float: left;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+body .content .learning-activity-box #learning-activity-answer-button {
+  position: absolute;
+  bottom: 315px;
+  right: 380px;
+  width: 50px;
+  cursor: pointer;
+}
+
+body .content .learning-activity-box .learning-activity-entry table {
+  border-collapse : collapse;
+  margin-top: 7px;
+}
+body .content .learning-activity-box .learning-activity-entry table td{
+  width: 1000px;
+  height: 80px;
+  text-align: center;
+  border: 1px solid rgb(215, 220, 230);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  vertical-align: top;
+  vertical-align: bottom;
+  vertical-align: middle;
+}
+
+.example-icon-img {
+  width: 20px;
+  margin-top: 10px;
+}
+
+body .content .learning-activity-box .learning-activity-table-title {
+  background-color: rgb(215, 220, 230);
 }
 
 body .content footer .page-number {
@@ -219,4 +283,30 @@ body .content footer .page-number {
 body .content footer .page-number text {
   font-size: 25px;
   font-weight: bold;
+}
+
+.modal {
+  display: none;
+}
+
+#modal1 {
+  position: absolute;
+  top: 500px;
+  left: 50px;
+  width: 1200px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid rgb(72, 209, 255);
+  z-index: 1000;
+}
+
+#modal2 {
+  position: absolute;
+  top: 500px;
+  left: 50px;
+  width: 1200px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid rgb(242, 174, 157);
+  z-index: 1000;
 }
