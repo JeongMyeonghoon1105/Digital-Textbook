@@ -1,0 +1,162 @@
+html {
+  font-size: 40px;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: lightgray;
+  position: relative;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body .content {
+  width: 2480px;
+  height: 3508px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* 중단원 제목 */
+body .content img.chapter-title {
+  width: 100%;
+}
+
+body .content div.chapter-title {
+  position: absolute;
+  top: 227px;
+  left: 800px;
+  font-size: 110px;
+  font-weight: bold;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 학습목표 */
+body .content div.learning-objectives {
+  position: absolute;
+  top: 410px;
+  left: 800px;
+  font-size: 35px;
+  line-height: 50px;
+}
+
+body .content div.learning-objectives text.cdot {
+  color: orange;
+  font-weight: bolder;
+}
+
+body .content div.opening-idea {
+  position: absolute;
+  top: 600px;
+  left: 200px;
+  width: 2000px;
+}
+
+body .content div.opening-idea img.opening-idea {
+  width: 2030px;
+}
+
+body .content div.opening-idea .opening-idea-title {
+  position: absolute;
+  top: 80px;
+  left: 330px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+body .content div.opening-idea .opening-idea-img {
+  position: absolute;
+  top: 190px;
+  left: 330px;
+  width: 1650px;
+}
+
+body .content .opening-idea-border {
+  position: absolute;
+  top: 700px;
+  right: 200px;
+  width: 1865px;
+}
+
+body .content div.opening-idea .opening-idea-text {
+  position: absolute;
+  top: 770px;
+  left: 330px;
+  font-size: 40px;
+}
+
+/* 소단원 제목 */
+body .content img.subsection-number {
+  position: absolute;
+  top: 1700px;
+  left: 750px;
+  width: 120px;
+}
+
+body .content .subsection-title {
+  position: absolute;
+  top: 1710px;
+  left: 900px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+body .content .subsection-title text {
+  color: navy;
+  font-size: 40px;
+  font-family: 'Dongle', sans-serif;
+}
+
+/* 본문 */
+body .content .main-text {
+  position: absolute;
+  top: 1900px;
+  right: 200px;
+  width: 1500px;
+  font-size: 40px;
+  line-height: 70px;
+  text-align: justify;
+}
+
+body .content .main-text .main-text-img {
+  margin-top: 70px;
+  width: 1500px;
+}
+
+body .content .main-text .img-caption {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 550px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+body .content .main-text .img-caption div {
+  width: 300px;
+  background-color: #245d43;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* 페이지 번호 */
+body .content .page-number {
+  position: absolute;
+  bottom: 200px;
+  left: 200px;
+  font-size: 40px;
+}
