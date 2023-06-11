@@ -36,7 +36,7 @@ body .content img.subsection-number {
 body .content .subsection-title {
   position: absolute;
   top: 200px;
-  left: 470px;
+  left: 350px;
   font-size: 50px;
   font-weight: bold;
   line-height: 60px;
@@ -51,14 +51,34 @@ body .content .subsection-title text {
 /* 본문 */
 body .content .main-text {
   position: absolute;
-  top: 1900px;
-  right: 750px;
+  top: 400px;
+  left: 200px;
   width: 1500px;
   font-size: 40px;
   line-height: 70px;
   text-align: justify;
 }
 
+/* 본문 추가 문단 */
+body .content .main-text #text-1 {
+  position: absolute;
+  top: 1000px;
+  width: 1500px;
+  font-size: 40px;
+  line-height: 70px;
+  text-align: justify;
+}
+
+body .content .main-text #text-2 {
+  position: absolute;
+  top: 1800px;
+  width: 1500px;
+  font-size: 40px;
+  line-height: 70px;
+  text-align: justify;
+}
+
+/* 본문 이미지 */
 body .content .main-text .main-text-img {
   margin-top: 70px;
   width: 1500px;
@@ -68,7 +88,7 @@ body .content .main-text .img-caption {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  right: 0;
+  left: 0;
   right: 0;
   margin: 0 auto;
   width: 550px;
@@ -83,6 +103,62 @@ body .content .main-text .img-caption div {
   color: white;
   text-align: center;
   font-size: 35px;
+}
+
+/* 표 */
+body .content .main-text .table {
+  width: 1500px;
+  height: 400px;
+  border: 1px solid gray;
+}
+
+body .content .main-text .table tr {
+  border: 1px solid gray;
+}
+
+body .content .main-text .table tr td {
+  border: 1px solid gray;
+}
+
+body .content .main-text #table-1 {
+  position: absolute;
+  top: 1265px;
+}
+
+body .content .main-text .table-caption {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 550px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* 함께 해보기 */
+body .content .main-text div.try-together {
+  position: absolute;
+  top: 2000px;
+  width: 1500px;
+}
+
+body .content .main-text div img.try-together {
+  position: absolute;
+  width: 1500px;
+}
+
+body .content .main-text div .try-together-text {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  width: 1500px;
+}
+
+body .content .main-text div img#try-together {
+  top: 600px;
+  left: 0;
 }
 
 /* 페이지 번호 */
